@@ -1,7 +1,5 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Custom CSS for Physical AI & Humanoid Robotics Textbook
  */
 
 /* You can override the default Infima variables here. */
@@ -27,4 +25,59 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight active sidebar item with accent green color */
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link--active,
+.menu__list-item:not(.menu__list-item--collapsed) .menu__link--active:hover {
+  color: #00C896 !important;
+  background-color: rgba(0, 200, 150, 0.1);
+  border-left: 3px solid #00C896;
+  font-weight: 600;
+}
+
+/* Add subtle separator lines between sections */
+.menu__list-item {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+/* Add shaded background to category headers */
+.menu__list .menu__list-item .menu__list-item {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+/* Style for category headers */
+.menu__list .menu__list-item > .menu__link {
+  font-weight: 600;
+  color: #242526;
+}
+
+/* Adjust sidebar item indentation for better visual hierarchy */
+.menu__list .menu__list .menu__list-item > .menu__link {
+  padding-left: 1.5rem;
+}
+
+.menu__list .menu__list .menu__list .menu__list-item > .menu__link {
+  padding-left: 2rem;
+}
+
+.menu__list .menu__list .menu__list .menu__list .menu__list-item > .menu__link {
+  padding-left: 2.5rem;
+}
+
+/* Improve spacing and readability */
+.menu__link {
+  margin: 2px 0;
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+/* Add hover effect for better interactivity */
+.menu__link:hover {
+  background-color: #f0f2f5;
 }
