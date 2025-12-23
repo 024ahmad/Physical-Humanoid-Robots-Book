@@ -5,6 +5,39 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+.python-version
+pip-log.txt
+pipenv.lock
+.Poetry.lock
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.nox/
+.pyre/
+.pytype/
+celerybeat-schedule
+celerybeat.pid
+*.sage.py
+.inst-node_modules
+.spyderproject
+.spyproject
+.ropeproject
+/site
+.sass-cache/
+
 # Production build
 build/
 dist/
@@ -27,6 +60,7 @@ Thumbs.db
 
 # Logs
 *.log
+server.log
 
 # Coverage
 coverage/
@@ -45,3 +79,39 @@ coverage/
 .vs/
 *.sublime-project
 *.sublime-workspace
+
+# JavaScript/Node.js additional
+npm/
+.npm
+node/
+.yarn/
+.yarn-cache/
+.yarn-integrity
+.yarn-metadata.json
+.yarnrc.yml
+package-lock.json
+yarn.lock
+.nyc_output/
+coverage/
+*.lcov
+*.log
+.next/
+.nuxt/
+.vuepress/dist
+.vuepress/.cache
+.vitepress/cache
+.vercel/output
+.vercel/build-cache
+.output
+.svelte-kit/
+.svelte/
+.astro/
+dist/
+build/
+.release.json
+.commit
+.eslintcache
+.stylelintcache
+.pnp.*
+.pnp.cjs
+.pnp.js
