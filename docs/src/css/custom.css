@@ -81,3 +81,28 @@
 .menu__link:hover {
   background-color: #f0f2f5;
 }
+
+/* Increase navbar logo size */
+.navbar__logo {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar__logo img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+/* If you want even larger logo, you can increase the values */
+@media (min-width: 997px) {
+  .navbar__logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar__logo img {
+    height: 50px;
+    width: 50px;
+  }
+}

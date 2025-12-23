@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import path from 'path';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -72,7 +73,7 @@ const config = {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
           alt: 'Humanoid Robotics Textbook',
-          src: 'img/logo.svg',
+          src: 'img/Robotic.png',
         },
         items: [
           {
@@ -134,6 +135,10 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  customFields: {
+    frontendPath: path.resolve(__dirname, '../frontend/dist/chatbot.es.js'),
+  },
 };
 
 export default config;
