@@ -12,7 +12,7 @@ __pycache__/
 *.so
 .Python
 env/
-venv/
+backend/venv
 ENV/
 .venv/
 env.bak/
@@ -41,6 +41,8 @@ celerybeat.pid
 # Production build
 build/
 dist/
+!frontend/dist/
+!frontend/dist/**
 public/
 
 # Environment variables
