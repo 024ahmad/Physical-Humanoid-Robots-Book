@@ -21,7 +21,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://humanoid-robots-textbook789.vercel.app',
+  url: 'https://physical-humanoid-robots-book-e6m5.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
