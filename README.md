@@ -1,4 +1,4 @@
-# Physical AI & Humanoid Robotics Textbook
+# Hackathon 1 Physical AI & Humanoid Robotics Textbook
 
 An interactive textbook with AI-powered chatbot for learning humanoid robotics concepts.
 
