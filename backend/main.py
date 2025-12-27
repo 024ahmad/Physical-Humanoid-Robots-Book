@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Create FastAPI app instance
-app = FastAPI(title="RAG Chatbot API", version="1.0.0")
+app = FastAPI(title="RAG Chatbottt API", version="1.0.0")
 
 # Configure CORS middleware for frontend URL
 app.add_middleware(
