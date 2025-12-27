@@ -29,6 +29,11 @@
   padding: 1rem;
 }
 
+.featureCardLink {
+  text-decoration: none;
+  width: 100%;
+}
+
 .featureCardInner {
   background: var(--ifm-card-background-color, #fff);
   border-radius: 1rem;
@@ -57,16 +62,15 @@
   justify-content: center;
 }
 
-.featureCardTitle {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: var(--ifm-heading-font-weight);
+.emojiIcon {
+  font-size: 2.5rem;
 }
 
-.featureCardDescription {
-  margin-bottom: 0;
-  color: var(--ifm-font-color-base);
-  line-height: 1.6;
+.featureCardTitle {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: var(--ifm-heading-font-weight);
+  line-height: 1.4;
 }
 
 /* Responsive layout */

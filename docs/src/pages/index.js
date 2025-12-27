@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import { Code2, Brain, Compass } from 'lucide-react';
 
 function HomepageHeader() {
   return (
@@ -27,40 +26,47 @@ function HomepageHeader() {
   );
 }
 
-function FeatureCard({ title, description, icon: Icon }) {
+function FeatureCard({ title, to, icon }) {
   return (
     <div className={clsx('col', 'col--4', styles.featureCard)}>
-      <div className={styles.featureCardInner}>
-        <div className={styles.featureCardIcon}>
-          <Icon size={48} />
+      <Link to={to} className={styles.featureCardLink}>
+        <div className={styles.featureCardInner}>
+          <div className={styles.featureCardIcon}>
+            {icon}
+          </div>
+          <h3 className={styles.featureCardTitle}>{title}</h3>
         </div>
-        <h3 className={styles.featureCardTitle}>{title}</h3>
-        <p className={styles.featureCardDescription}>{description}</p>
-      </div>
+      </Link>
     </div>
   );
 }
 
 function FeaturesSection() {
+  // Define the mapping from category labels to emojis and routes
+  const categoryRoutes = {
+    '📘 Introduction': { emoji: '📘', route: '/docs/intro' },
+    '🤖 Module 1: The Robotic Nervous System (ROS 2)': { emoji: '🤖', route: '/docs/modules/module-1/summary' },
+    '🧠 Module 2: The Digital Twin (Gazebo & Unity)': { emoji: '🧠', route: '/docs/modules/module-2/summary' },
+    '👁️ Module 3: The AI-Robot Brain (NVIDIA Isaac™)': { emoji: '👁️', route: '/docs/modules/module-3/summary' },
+    '⚙️ Module 4: Vision-Language-Action (VLA)': { emoji: '⚙️', route: '/docs/modules/module-4/summary' },
+    '📘 Conclusion: Course Wrap-up and Future Directions': { emoji: '📘', route: '/docs/conclusion' },
+  };
+
+  // Create feature cards based on the sidebar configuration
+  const featureCards = Object.entries(categoryRoutes).map(([label, data]) => (
+    <FeatureCard
+      key={label}
+      title={label}
+      to={data.route}
+      icon={<span className={styles.emojiIcon}>{data.emoji}</span>}
+    />
+  ));
+
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <FeatureCard
-            icon={Code2}
-            title="Implementation Focus"
-            description="Code examples and practical walkthroughs for real-world robotics"
-          />
-          <FeatureCard
-            icon={Brain}
-            title="AI Integration"
-            description="Machine learning, neural networks, and intelligent decision-making"
-          />
-          <FeatureCard
-            icon={Compass}
-            title="Advanced Topics"
-            description="Motion planning, vision, and navigation"
-          />
+          {featureCards}
         </div>
       </div>
     </section>
