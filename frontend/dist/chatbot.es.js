@@ -2029,7 +2029,7 @@ const {
   mergeConfig: Fr
 } = O, fr = {};
 let Fe;
-typeof import.meta < "u" && fr ? Fe = "http://localhost:8000" : (Fe = process.env.VITE_BACKEND_URL || "http://localhost:8000", process.env.VITE_ENABLE_TRANSLATION);
+typeof import.meta < "u" && fr ? Fe = "https://sharoz024-physical-humanoid-robot.hf.space/" : (Fe = process.env.VITE_BACKEND_URL || "https://sharoz024-physical-humanoid-robot.hf.space/", process.env.VITE_ENABLE_TRANSLATION);
 const hr = {
   backendUrl: Fe
 }, ue = O.create({

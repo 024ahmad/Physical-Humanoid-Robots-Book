@@ -1,8 +1,7 @@
 # RAG Chatbot API Documentation
 
 ## Base URL
-`http://localhost:8000` (development)
-`https://your-production-domain.com` (production)
+`https://sharoz024-physical-humanoid-robot.hf.space/` (production)
 
 ## Endpoints
 
@@ -86,7 +85,7 @@
 
 ### Chat Request:
 ```bash
-curl -X POST http://localhost:8000/api/chat \
+curl -X POST https://sharoz024-physical-humanoid-robot.hf.space/api/chat \
   -H "Content-Type: application/json" \
   -d '{
     "query": "What is humanoid robotics?",
@@ -97,7 +96,7 @@ curl -X POST http://localhost:8000/api/chat \
 
 ### Selected Text Request:
 ```bash
-curl -X POST http://localhost:8000/api/chat-selected-text \
+curl -X POST https://sharoz024-physical-humanoid-robot.hf.space/api/chat-selected-text \
   -H "Content-Type: application/json" \
   -d '{
     "query": "Explain this concept",
